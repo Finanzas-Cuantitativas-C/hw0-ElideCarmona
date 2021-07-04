@@ -25,8 +25,7 @@ def load_timeseries(ric, file_extension='csv'):
     # get market data
     # remember to modify the path to match your own directory
     #ulmo path = 'C:\\Users\Meva\\.spyder-py3\\data\\' + ric + '.' + file_extension
-    directory = 'C:\\Users\\Elide\\OneDrive - ciencias.unam.mx\\Documentos\\Seminario Finanzas\\CursoPython\\hw0\\hw0-ElideCarmona\\data\\' # hardcoded
-    path = directory + ric + '.' + file_extension
+    path = './data/' + ric + '.' + file_extension
     if file_extension == 'csv':
         raw_data = pd.read_csv(path) # default csv
     else:
